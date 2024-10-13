@@ -15,6 +15,13 @@ To learn more about Postfix and other notations, see:
   - `'clr'`: Clear the current answer
   - `'ans`: Show the current answer
   - `'h'`: Display help instructions
+- **Operations**:
+  - `+`: Addition
+  - `-`: Substraction
+  - `*`: Multiplication
+  - `/`: Division
+  - `^`: Exponentiation
+  - `&`, `|` and `v`: Bitwise `AND`, `OR` and `XOR` respectively 
 
 ## Installation
 1. Clone the repository:
