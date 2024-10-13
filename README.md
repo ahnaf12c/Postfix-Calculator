@@ -22,6 +22,7 @@ To learn more about Postfix and other notations, see:
   - `/`: Division
   - `^`: Exponentiation
   - `&`, `|` and `v`: Bitwise `AND`, `OR` and `XOR` respectively 
+- **Any syntax error now automatically clears the stack**
 
 ## Installation
 1. Clone the repository:
