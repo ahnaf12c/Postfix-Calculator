@@ -3,7 +3,7 @@ import tokenizer as tkn
 
 #define lists with the operators and digits
 operators  = tkn.operators
-digits = tkn.digits 
+digits = tkn.digits     
 
 if __name__ == '__main__':
     #initialize the stack
@@ -19,9 +19,13 @@ if __name__ == '__main__':
         elif expression == 'clr': #clearing answer 
             stack.stack.clear()
 
+        elif expression == 'ans': #showing current answer in stack
+            stack.display()
+
         elif expression == 'h':   #show commands
             print("""'q' = Exit
 'clr' = Clear answer
+'ans' = sho current answer in stack
 'h' = help
 Please remember to clear the answer if you want to start a new calculation!
 Don't clear if you want to continue from the answer!
@@ -38,6 +42,7 @@ Current Answer value in the stack:""")
                         #If the length of the stack is less than 2, then there aren't enough operands to operate on, so throw an error     
                         if len(stack.stack) < 2:   
                             print("Syntax Error!")
+                            stack.stack.clear()
                             break
 
                         #Pop the top two elements from the stack
@@ -58,14 +63,21 @@ Current Answer value in the stack:""")
                                 print("Math Error! Division by Zero is undefined!") #throw error is division by zero
                                 break
                         elif token == '^':
-                            stack.push(b ** a)      
+                            stack.push(b ** a)
+                        elif token == '&':
+                            stack.push(int(a) & int(b))
+                        elif token == '|':
+                            stack.push(int(a) | int(b))
+                        elif token == 'v':
+                            stack.push(int(a) ^ int(b))      
 
-        #If stack has one element after all operations, it means that the answer and expression was valid. So display the answer        
-        if len(stack.stack) <= 1:    
-            stack.display()
+            #If stack has one element after all operations, it means that the answer and expression was valid. So display the answer        
+            if len(stack.stack) <= 1:    
+                stack.display()
         
-        #If length is more than one, then it means the expression was not valid, throw an error
-        elif len(stack.stack) > 1:
-            print("Syntax Error!")
+            #If length is more than one, then it means the expression was not valid, throw an error
+            elif len(stack.stack) > 1:
+                print("Syntax Error!")
+                stack.stack.clear()
                     
 #For more updates, like and subscribe, but wait, I don't have a youtube channel!😅😅

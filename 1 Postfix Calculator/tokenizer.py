@@ -1,5 +1,5 @@
 #define lists with the operators and digits
-operators  = ['+', '-', '*', '/', '^']
+operators  = ['+', '-', '*', '/', '^', '&', '|', 'v']
 digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.']
 
 #define a function to tokenize the expression
