@@ -13,6 +13,7 @@ To learn more about Postfix and other notations, see:
 - **User Commands**:
   - `'q'`: Exit the calculator
   - `'clr'`: Clear the current answer
+  - `'ans`: Show the current answer
   - `'h'`: Display help instructions
 
 ## Installation
@@ -35,7 +36,11 @@ To learn more about Postfix and other notations, see:
    Result: 7.0
 
 ## Version
- - Version: Release 1.0.0
+ - Version: Release 1.0.1
+ - Features of 1.0.1:
+   - Added logical operations (bitwise `OR`, `AND` and `XOR`)
+   - Improved error handling a bit
+   - Added one new command (`ans` command)
 
 ## Support
 For any questions or issues, please create an issue in the GitHub repository or contact me via ahnaf101109@gmail.com
