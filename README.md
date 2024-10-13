@@ -2,6 +2,10 @@
 
 ## Description
 This project is a calculator that evaluates postfix expressions (also known as Reverse Polish Notation). It allows users to input mathematical expressions using numbers and operators, evaluates the expression using a stack-based algorithm, and outputs the result. The calculator can handle both integer and floating-point numbers and provides basic error handling for invalid expressions and operations.
+To learn more about Postfix and other notations, see:
+- https://en.wikipedia.org/wiki/Reverse_Polish_notation
+- https://en.wikipedia.org/wiki/Polish_notation
+- https://en.wikipedia.org/wiki/Infix_notation
 
 ## Features
 - **Postfix Expression Evaluation**: Supports basic arithmetic operations: addition, subtraction, multiplication, division, and exponentiation.
